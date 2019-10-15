@@ -1,0 +1,32 @@
+#Hey guys, I figure we can use this file for keeping notes on what we've figured out so far
+#so far I created two separate files within ref_sequences that combines hsp70 sequences and mscrAgene sequences. below is the code I used
+
+cat hsp70* > hsp70refs
+cat mcrAgene* > mcrAgenerefs
+
+#you should see these two files inside the ref_sequences folder
+#next I ran muscle sequence with one of the proteome files against the mcrAgenerefs file
+
+../muscle -in proteomes/proteome_01.fasta -out ref_sequences/mcrAgenerefs 
+
+#this is currently what the code output looks like (not the actual final file but the descriptions while command is running)
+MUSCLE v3.8.31 by Robert C. Edgar
+
+http://www.drive5.com/muscle
+This software is donated to the public domain.
+Please cite: Edgar, R.C. Nucleic Acids Res 32(5), 1792-97.
+
+
+*** WARNING *** Assuming Amino (see -seqtype option), invalid letters found: U
+proteome_01 2486 seqs, max length 2025, avg  length 321
+00:00:17     64 MB(5%)  Iter   1  100.00%  K-mer dist pass 1
+00:00:17     64 MB(5%)  Iter   1  100.00%  K-mer dist pass 2
+00:01:58  1952 MB(100%)  Iter   1  100.00%  Align node      
+00:01:59  1952 MB(100%)  Iter   1  100.00%  Root alignment
+00:04:07  1965 MB(100%)  Iter   2  100.00%  Refine tree   
+00:04:07  1965 MB(100%)  Iter   2  100.00%  Root alignment
+00:04:07  1965 MB(100%)  Iter   2  100.00%  Root alignment
+00:23:34  1965 MB(100%)  Iter   3    4.77%  Refine biparts
+
+#it is not yet completed
+
