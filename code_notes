@@ -29,4 +29,8 @@ proteome_01 2486 seqs, max length 2025, avg  length 321
 00:23:34  1965 MB(100%)  Iter   3    4.77%  Refine biparts
 
 #it is not yet completed
+#I found this code online that says it will speed things up
+2.4 Fastest speed
+If you want the fastest possible speed, then the following example shows the applicable options for proteins.
 
+muscle -in seqs.fa -out seqs.afa -maxiters 1 -diags1 -sv -distance1 kbit20_3
