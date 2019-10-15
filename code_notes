@@ -34,3 +34,17 @@ proteome_01 2486 seqs, max length 2025, avg  length 321
 If you want the fastest possible speed, then the following example shows the applicable options for proteins.
 
 muscle -in seqs.fa -out seqs.afa -maxiters 1 -diags1 -sv -distance1 kbit20_3
+
+#I just realized that my first muscle code is probably wrong. I think the file after -out is just the name of the output file.
+#next I tried
+
+../muscle -in proteomes/proteome_01.fasta -out proteomes/proteome_01.afa -maxiters 1 -diags1 -sv -distance1 kbit20_3
+
+#it went faster and this was my output
+*** WARNING *** Assuming Amino (see -seqtype option), invalid letters found: U
+proteome_01 2486 seqs, max length 2025, avg  length 321
+00:00:18     39 MB(3%)  Iter   1  100.00%  K-bit distance matrix
+00:00:31   653 MB(52%)  Iter   1  100.00%  Align node           
+00:00:31   656 MB(52%)  Iter   1  100.00%  Root alignment
+
+#output file is located in proteomes and is called "proteome_01.afa"
