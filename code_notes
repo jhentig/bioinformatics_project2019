@@ -88,7 +88,6 @@ Domain annotation for each sequence (and alignments):
 
    [No targets detected that satisfy reporting thresholds]
 
-
 Internal pipeline statistics summary:
 -------------------------------------
 Query model(s):                            1  (1297 nodes)
@@ -104,3 +103,6 @@ Domain search space  (domZ):               0  [number of targets reported over t
 //
 [ok]
 
+##JAYME #I spoke with Stewart who hinted that the inital muscle -in should be the compiled file, though I'm not sure that makes sense. I pushed on with
+#what Sam was doing and performed the same sequence for isolet 2 where I received no hits. I will run isolet 3 before class and have that for us to see if there is a 
+#hit there. 
