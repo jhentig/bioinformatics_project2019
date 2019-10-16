@@ -107,6 +107,9 @@ Domain search space  (domZ):               0  [number of targets reported over t
 #what Sam was doing and performed the same sequence for isolet 2 where I received no hits. I will run isolet 3 before class and have that for us to see if there is a 
 #hit there. 
 ## JAYME Update- I have completed muscle/hmmer build/hmmer search following Sam's code for isolets 2-5 against mcrA and hsp70 with no hits at all. 
+<<<<<<< HEAD
+
+=======
 ##### muscle needed to be against ref genes, those are listed as alignment._____ 
 #### hmmbuild requires a singular input where the output is hmm.build (first) and then your input file
 #####hmmsearch applies hmmbuild against the proteome
@@ -114,3 +117,4 @@ Domain search space  (domZ):               0  [number of targets reported over t
 ./Private/bin/bin/hmmbuild --amino ./bioinformatics_project2019/alingment.mcrA.hmmbuild ./bioinformatics_project2019/alingment.mcrA
 
 ./Private/bin/bin/hmmsearch --tblout proteom.x.table ./bioinformatics_project2019/alingment.mcrA.hmmbuild ./bioinformatics_project2019/proteomes/proteome_0x.fasta
+>>>>>>> 22ba7153d327d5ba6e8a326310398d8c018e7e70
