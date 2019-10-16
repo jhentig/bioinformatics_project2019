@@ -107,3 +107,4 @@ Domain search space  (domZ):               0  [number of targets reported over t
 #what Sam was doing and performed the same sequence for isolet 2 where I received no hits. I will run isolet 3 before class and have that for us to see if there is a 
 #hit there. 
 ## JAYME Update- I have completed muscle/hmmer build/hmmer search following Sam's code for isolets 2-5 against mcrA and hsp70 with no hits at all. 
+
