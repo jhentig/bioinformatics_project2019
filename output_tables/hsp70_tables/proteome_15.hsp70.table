@@ -8,7 +8,7 @@ WP_011971911.1       -          alingment            -           3.4e-103  342.6
 # Pipeline mode:   SEARCH
 # Query file:      alingment.hsp70.hmmbuild
 # Target file:     proteomes/proteome_15.fasta
-# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_15.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_15.fasta 
-# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
-# Date:            Wed Oct 16 13:13:22 2019
+# Option settings: /afs/crc.nd.edu/user/s/sgolomb/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_15.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_15.fasta 
+# Current dir:     /afs/crc.nd.edu/user/s/sgolomb/Private/bioinformatics_project2019
+# Date:            Wed Oct 16 14:29:26 2019
 # [ok]

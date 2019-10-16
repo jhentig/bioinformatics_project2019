@@ -7,7 +7,7 @@
 # Pipeline mode:   SEARCH
 # Query file:      alingment.mcrA.hmmbuild
 # Target file:     proteomes/proteome_01.fasta
-# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/mcrA_tables/proteome_01.mcrA.table alingment.mcrA.hmmbuild proteomes/proteome_01.fasta 
-# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
-# Date:            Wed Oct 16 13:13:19 2019
+# Option settings: /afs/crc.nd.edu/user/s/sgolomb/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/proteome_01.mcrA.table alingment.mcrA.hmmbuild proteomes/proteome_01.fasta 
+# Current dir:     /afs/crc.nd.edu/user/s/sgolomb/Private/bioinformatics_project2019
+# Date:            Wed Oct 16 14:57:00 2019
 # [ok]
