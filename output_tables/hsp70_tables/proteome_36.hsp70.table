@@ -1,0 +1,16 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_001062605.1       -          alingment            -           1.5e-263  873.5  32.8  3.1e-233  773.3  27.9   2.0   1   1   1   2   2   2   2 MULTISPECIES: molecular chaperone DnaK 
+WP_001196574.1       -          alingment            -           2.1e-153  509.6   8.4    8e-153  507.7   8.4   1.7   1   1   0   1   1   1   1 MULTISPECIES: Fe-S protein assembly chaperone HscA 
+WP_000601379.1       -          alingment            -            3.1e-13   46.6   2.1   2.3e-12   43.8   2.1   2.3   1   1   0   1   1   1   1 MULTISPECIES: rod shape-determining protein 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      alingment.hsp70.hmmbuild
+# Target file:     proteomes/proteome_36.fasta
+# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_36.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_36.fasta 
+# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
+# Date:            Wed Oct 16 13:13:25 2019
+# [ok]

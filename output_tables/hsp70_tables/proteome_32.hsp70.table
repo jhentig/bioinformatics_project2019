@@ -1,0 +1,17 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_013362005.1       -          alingment            -           8.5e-297  982.7  30.8  9.5e-297  982.5  30.8   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_013360607.1       -          alingment            -             5e-129  428.5   0.2  7.4e-129  427.9   0.2   1.1   1   0   0   1   1   1   1 molecular chaperone HscC 
+WP_013362571.1       -          alingment            -            3.8e-12   42.4   6.2   1.9e-11   40.1   6.2   2.1   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_013360481.1       -          alingment            -            1.6e-08   30.4   2.5   0.00022   16.8   0.6   2.7   2   1   1   3   3   3   2 ethanolamine utilization protein EutJ 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      alingment.hsp70.hmmbuild
+# Target file:     proteomes/proteome_32.fasta
+# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_32.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_32.fasta 
+# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
+# Date:            Wed Oct 16 13:13:24 2019
+# [ok]

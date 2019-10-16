@@ -1,0 +1,18 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+NP_951095.1          -          alingment            -           6.1e-285  944.0  20.1    4e-282  934.6  20.1   2.0   1   1   0   1   1   1   1 molecular chaperone DnaK 
+NP_953138.1          -          alingment            -            1.3e-12   44.4   3.0   2.9e-12   43.3   3.0   1.9   1   1   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951790.1          -          alingment            -            8.9e-07   25.1   0.3   1.3e-06   24.6   0.3   1.2   1   0   0   1   1   1   1 rod shape-determining protein MreB 
+NP_951094.1          -          alingment            -             0.0079   12.1   0.4    0.0096   11.8   0.4   1.1   1   0   0   1   1   1   1 heat shock protein GrpE 
+NP_951605.1          -          alingment            -                1.1    5.1  10.8       1.6    4.5  10.8   1.2   1   0   0   1   1   1   0 DNA mismatch repair ATPase MutS-2 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      alingment.hsp70.hmmbuild
+# Target file:     proteomes/proteome_21.fasta
+# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_21.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_21.fasta 
+# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
+# Date:            Wed Oct 16 13:13:23 2019
+# [ok]

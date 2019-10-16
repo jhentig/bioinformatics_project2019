@@ -1,0 +1,15 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_004214171.1       -          alingment            -                  0 1042.4  28.6         0 1042.1  28.6   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+WP_004268047.1       -          alingment            -                3.7    3.5  15.9         4    3.4  15.9   1.0   1   0   0   1   1   1   0 V-type ATP synthase subunit H 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      alingment.hsp70.hmmbuild
+# Target file:     proteomes/proteome_27.fasta
+# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_27.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_27.fasta 
+# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
+# Date:            Wed Oct 16 13:13:23 2019
+# [ok]

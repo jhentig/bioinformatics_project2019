@@ -1,0 +1,14 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_010902322.1       -          alingment            -                  0 1049.9  32.2         0 1049.7  32.2   1.0   1   0   0   1   1   1   1 molecular chaperone DnaK 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      alingment.hsp70.hmmbuild
+# Target file:     proteomes/proteome_09.fasta
+# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_09.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_09.fasta 
+# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
+# Date:            Wed Oct 16 13:13:20 2019
+# [ok]

@@ -1,0 +1,20 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+WP_053549228.1       -          alingment            -             3e-283  938.4  23.9  1.6e-249  827.0  18.5   2.0   1   1   1   2   2   2   2 molecular chaperone DnaK 
+WP_053550046.1       -          alingment            -            1.9e-12   43.9   5.9   8.3e-12   41.8   5.9   1.9   1   1   0   1   1   1   1 rod shape-determining protein 
+WP_053550968.1       -          alingment            -            0.00062   15.7   0.3    0.0076   12.2   0.1   2.2   1   1   0   2   2   2   1 pilus assembly protein PilM 
+WP_053551643.1       -          alingment            -             0.0024   13.8   0.7    0.0024   13.8   0.7   2.6   3   1   0   3   3   3   1 cell division protein FtsA 
+WP_053549249.1       -          alingment            -             0.0025   13.7   0.2     0.096    8.5   0.0   2.0   2   0   0   2   2   2   2 ketoacyl-ACP synthase III 
+WP_053550303.1       -          alingment            -             0.0071   12.3   0.1     0.011   11.7   0.1   1.2   1   0   0   1   1   1   1 4-hydroxy-3-methylbut-2-enyl diphosphate reductase 
+WP_082351077.1       -          alingment            -              0.021   10.7   0.5     0.059    9.2   0.1   1.7   2   0   0   2   2   2   0 hypothetical protein 
+#
+# Program:         hmmsearch
+# Version:         3.2.1 (June 2018)
+# Pipeline mode:   SEARCH
+# Query file:      alingment.hsp70.hmmbuild
+# Target file:     proteomes/proteome_31.fasta
+# Option settings: /afs/crc.nd.edu/user/j/jhentig/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_31.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_31.fasta 
+# Current dir:     /afs/crc.nd.edu/user/j/jhentig/bioinformatics_project2019
+# Date:            Wed Oct 16 13:13:24 2019
+# [ok]
