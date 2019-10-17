@@ -25,8 +25,8 @@
 #for file in proteomes/proteome_*.fasta; do
 #        name=`echo $file | cut -d "." -f 1 | cut -d "/" -f 2`
 #       echo "$name"
-#	~/Private/bin/bin/hmmsearch --tblout output_tables/mcrA_tables/${name}.mcrA.table alingment.mcrA.hmmbuild $file
-#	~/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/${name}.hsp70.table alingment.hsp70.hmmbuild $file
+#	~/Private/bin/bin/hmmsearch --tblout output_tables/mcrA_tables/$name.mcrA.table alingment.mcrA.hmmbuild $file
+#	~/Private/bin/bin/hmmsearch --tblout output_tables/hsp70_tables/$name.hsp70.table alingment.hsp70.hmmbuild $file
 #done
 
 #this code has lines added in to count number of genes and store that info into a file
@@ -44,12 +44,12 @@
 #done
 
 
-
+# made a small change in storing the variable name 
 echo "Proteome, mcrA_genes, hsp70_genes" > proteomes_genesearch.csv
 for file in proteomes/proteome_*.fasta; do
-        name=`echo $file | cut -d "." -f 1 | cut -d "/" -f 2`
-        echo "$name"
+        name=$(echo $file | cut -d "." -f 1 | cut -d "/" -f 2)
+        echo $name
         ~/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/${name}.mcrA.table alingment.mcrA.hmmbuild $file
-        mcrAvalue=cat ./output_tables/mcrA_tables/"${name}.mcrA.table" | grep -v "#" | wc -l
-	echo "$name", "$mcrAvalue", "$hsp70value" >> proteomes_genesearch.csv
+        mcrAvalue=cat ./output_tables/mcrA_tables/"$name.mcrA.table" | grep -v "#" | wc -l
+	echo $name, "$mcrAvalue", "$hsp70value" >> proteomes_genesearch.csv
 done
