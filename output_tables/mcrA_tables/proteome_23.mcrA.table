@@ -11,5 +11,5 @@ WP_011954158.1       -          alingment            -                  0 1016.3
 # Target file:     proteomes/proteome_23.fasta
 # Option settings: /afs/crc.nd.edu/user/s/sgolomb/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/proteome_23.mcrA.table alingment.mcrA.hmmbuild proteomes/proteome_23.fasta 
 # Current dir:     /afs/crc.nd.edu/user/s/sgolomb/Private/bioinformatics_project2019
-# Date:            Wed Oct 16 14:57:01 2019
+# Date:            Wed Oct 16 23:09:10 2019
 # [ok]

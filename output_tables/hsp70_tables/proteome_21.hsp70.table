@@ -14,5 +14,5 @@ NP_951605.1          -          alingment            -                1.1    5.1
 # Target file:     proteomes/proteome_21.fasta
 # Option settings: /afs/crc.nd.edu/user/s/sgolomb/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_21.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_21.fasta 
 # Current dir:     /afs/crc.nd.edu/user/s/sgolomb/Private/bioinformatics_project2019
-# Date:            Wed Oct 16 14:29:27 2019
+# Date:            Wed Oct 16 23:09:10 2019
 # [ok]

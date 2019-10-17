@@ -51,5 +51,7 @@ for file in proteomes/proteome_*.fasta; do
         echo $name
         ~/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/$name.mcrA.table alingment.mcrA.hmmbuild $file
         mcrAvalue=$(cat ./output_tables/mcrA_tables/"$name.mcrA.table" | grep -v "#" | wc -l)
+	~/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/hsp70_tables/${name}.hsp70.table alingment.hsp70.hmmbuild $file
+	hsp70value=$(cat ./output_tables/hsp70_tables/"$name.hsp70.table" | grep -v "#" | wc -l)
 	echo $name, "$mcrAvalue", "$hsp70value" >> proteomes_genesearch.csv
 done

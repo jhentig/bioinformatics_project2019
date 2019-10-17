@@ -1,0 +1,50 @@
+#usage: compile all reference genes into a singular file
+cat hsp70* > hsp70refs
+cat mcrA* > mcrArefs
+
+#usage: align reference sequences using muscle
+./muscle -in hsp70refs -out alignment.hsp70
+./muscle in mcrArefs -out alignment.mcrA 
+
+#usage: use hmmbuild to create a fuzzy picture of the gene 
+./Private/bin/bin/hmmbuild --amino ./bioinformatics_project2019/alignment.mcrA.hmmbuild ./bioinformatics_project2019/alignment.mcrA
+./Private/bin/bin/hmmbuild --amino ./bioinformatics_project2019/alignment.hsp70.hmmbuild ./bioinformatics_project2019/alignment.hsp70  
+
+#usage: create folders to collect output files from hmmsearch
+mkdir output_tables
+cd output_tables
+mkdir mcrA_tables
+mkdir hsp70_tables
+
+#move back into bioinformatics project folder
+cd ./bioinformatics_project2019/
+
+#create script to loop through each proteome file and search for "fuzzy" picture of either mcrAgene or hsp70 gene
+#when search is complete, the output file is immediately concatenated, all lines starting with "#" are removed and number of remaining lines (hits) are counted
+#number of lines for mcrAgene and hsp70gene are then stored in final destination file that lists all of the proteomes with the corresponding number of mcrA gene and hsp70 gene hits
+
+#move into bioinformatics project folder
+cd ./bioinformatics_project2019 
+#create file for collecting proteome info
+echo "Proteome, mcrA_genes, hsp70_genes" > proteomes_genesearch.csv
+#script usage code
+bash hmmsearch.sh
+
+#here is the for loop code contained in the script file (hmmsearch.sh) 
+#loop finds first proteome file
+#then set the name variable to be the name of the proteome file but with dots and slashes removed
+#echo the file name being processed through the loop
+#use hmmsearch to look for mcrAgene from hmmbuild against proteome
+#output table from hmmsearch is then concatenated, remove lines containing "#", then count number of lines left (hits)
+#same code is executed for hsp70gene
+#values from catting mcrAgene output table and hsp70 output table along with file name are appended into an already existing file to collect info for each proteome
+
+for file in proteomes/proteome_*.fasta; do
+        name=$(echo $file | cut -d "." -f 1 | cut -d "/" -f 2)
+        echo $name
+        ~/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/$name.mcrA.table alingment.mcrA.hmmbuild $file
+        mcrAvalue=$(cat ./output_tables/mcrA_tables/"$name.mcrA.table" | grep -v "#" | wc -l)
+	~/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/hsp70_tables/${name}.hsp70.table alingment.hsp70.hmmbuild $file
+	hsp70value=$(cat ./output_tables/hsp70_tables/"$name.hsp70.table" | grep -v "#" | wc -l)
+	echo $name, "$mcrAvalue", "$hsp70value" >> proteomes_genesearch.csv
+done

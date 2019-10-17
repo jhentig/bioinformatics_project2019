@@ -18,5 +18,5 @@ YP_003762961.1       -          alingment            -               0.11    9.7
 # Target file:     proteomes/proteome_22.fasta
 # Option settings: /afs/crc.nd.edu/user/s/sgolomb/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_22.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_22.fasta 
 # Current dir:     /afs/crc.nd.edu/user/s/sgolomb/Private/bioinformatics_project2019
-# Date:            Wed Oct 16 14:29:27 2019
+# Date:            Wed Oct 16 23:09:10 2019
 # [ok]
