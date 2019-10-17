@@ -11,5 +11,5 @@ WP_010868356.1       -          alingment            -              0.015   10.3
 # Target file:     proteomes/proteome_46.fasta
 # Option settings: /afs/crc.nd.edu/user/s/sgolomb/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/hsp70_tables/proteome_46.hsp70.table alingment.hsp70.hmmbuild proteomes/proteome_46.fasta 
 # Current dir:     /afs/crc.nd.edu/user/s/sgolomb/Private/bioinformatics_project2019
-# Date:            Wed Oct 16 23:09:13 2019
+# Date:            Thu Oct 17 12:13:11 2019
 # [ok]

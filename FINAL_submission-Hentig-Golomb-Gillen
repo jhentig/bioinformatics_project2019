@@ -48,3 +48,7 @@ for file in proteomes/proteome_*.fasta; do
 	hsp70value=$(cat ./output_tables/hsp70_tables/"$name.hsp70.table" | grep -v "#" | wc -l)
 	echo $name, "$mcrAvalue", "$hsp70value" >> proteomes_genesearch.csv
 done
+
+#this code takes the output table from the script and selects isolates that have at least 1 mcrA gene, making them candidate methanogens.
+#candidat methanogens are listed in 'candidate_methanogens.csv'
+cat proteomes_genesearch.csv | cut -d ',' -f 1,2 | awk '$2 == 1 || $2 == 2' > candidate_methanogens.csv

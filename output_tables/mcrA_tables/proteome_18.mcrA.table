@@ -9,5 +9,5 @@
 # Target file:     proteomes/proteome_18.fasta
 # Option settings: /afs/crc.nd.edu/user/s/sgolomb/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/proteome_18.mcrA.table alingment.mcrA.hmmbuild proteomes/proteome_18.fasta 
 # Current dir:     /afs/crc.nd.edu/user/s/sgolomb/Private/bioinformatics_project2019
-# Date:            Wed Oct 16 23:09:09 2019
+# Date:            Thu Oct 17 12:13:07 2019
 # [ok]
