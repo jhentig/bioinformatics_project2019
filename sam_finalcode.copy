@@ -49,7 +49,7 @@ echo "Proteome, mcrA_genes, hsp70_genes" > proteomes_genesearch.csv
 for file in proteomes/proteome_*.fasta; do
         name=$(echo $file | cut -d "." -f 1 | cut -d "/" -f 2)
         echo $name
-        ~/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/${name}.mcrA.table alingment.mcrA.hmmbuild $file
+        ~/Private/hmmer-3.2.1/bin/hmmsearch --tblout output_tables/mcrA_tables/$name.mcrA.table alingment.mcrA.hmmbuild $file
         mcrAvalue=cat ./output_tables/mcrA_tables/"$name.mcrA.table" | grep -v "#" | wc -l
 	echo $name, "$mcrAvalue", "$hsp70value" >> proteomes_genesearch.csv
 done
